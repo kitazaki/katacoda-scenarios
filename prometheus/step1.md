@@ -1,1 +1,5 @@
-This is your first step.
+### 1. prometheus のウェブページへアクセスします。
+```
+https://[[HOST_SUBDOMAIN]]-9090-[[KATACODA_HOST]].environments.katacoda.com/
+```{{copy}}
+
