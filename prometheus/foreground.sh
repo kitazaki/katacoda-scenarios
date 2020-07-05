@@ -11,7 +11,8 @@ cd ../
 
 cd cd blackbox_exporter-0.17.0.linux-amd64/
 mv blackbox.yml blackbox.yml.org
-wget 
+wget https://raw.githubusercontent.com/kitazaki/katacoda-scenarios/master/prometheus/blackbox.yml
+nohup ./blackbox_exporter --config.file="blackbox.yml" &
 cd ../
 
 cd prometheus-2.19.0.linux-amd64/
