@@ -25,3 +25,4 @@ wget https://raw.githubusercontent.com/kitazaki/katacoda-scenarios/master/promet
 nohup ./prometheus &
 cd ../
 
+ps w
