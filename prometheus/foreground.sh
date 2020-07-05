@@ -13,7 +13,7 @@ cd node_exporter-1.0.0.linux-amd64/
 nohup ./node_exporter &
 cd ../
 
-cd cd blackbox_exporter-0.17.0.linux-amd64/
+cd blackbox_exporter-0.17.0.linux-amd64/
 mv blackbox.yml blackbox.yml.org
 wget https://raw.githubusercontent.com/kitazaki/katacoda-scenarios/master/prometheus/blackbox.yml
 nohup ./blackbox_exporter --config.file="blackbox.yml" &
