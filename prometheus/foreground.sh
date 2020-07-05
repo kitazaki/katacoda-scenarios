@@ -24,5 +24,3 @@ mv prometheus.yml prometheus.yml.org
 wget https://raw.githubusercontent.com/kitazaki/katacoda-scenarios/master/prometheus/prometheus.yml
 nohup ./prometheus &
 cd ../
-
-ps w
