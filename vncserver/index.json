@@ -1,6 +1,6 @@
 {
-  "title": "Prometheus",
-  "description": "Prometheus",
+  "title": "vncserver",
+  "description": "vncserver",
   "details": {
     "steps": [{
       "title": "Step 1 - Run Command",
