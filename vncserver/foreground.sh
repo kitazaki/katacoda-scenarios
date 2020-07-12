@@ -4,6 +4,8 @@ chmod 755 ./vncserver
 printf "password\npassword\n\n" | vnc4passwd
 nohup ./vncserver -geometry 1366x768
 
-sudo apt update
-sudo apt -y install chromium-browser
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+unzip *.zip
+./ngrok authtoken 6WmXHUKPtB1YRbMruN1ad_3eXyrP6sdYdJVZnNAZjnf
+./ngrok tcp 59001
 
