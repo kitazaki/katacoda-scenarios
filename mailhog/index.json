@@ -1,6 +1,6 @@
 {
-  "title": "Prometheus",
-  "description": "Prometheus",
+  "title": "MailHog",
+  "description": "MailHog",
   "details": {
     "steps": [{
       "title": "Step 1 - Run Command",
