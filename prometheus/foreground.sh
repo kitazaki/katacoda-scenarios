@@ -21,15 +21,15 @@ wget https://raw.githubusercontent.com/kitazaki/katacoda-scenarios/master/promet
 nohup ./blackbox_exporter --config.file="blackbox.yml" &
 cd ../
 
-#cd alertmanager-0.21.0.linux-amd64/
-#mv alertmanager.yml alertmanager.yml.org
-#wget https://raw.githubusercontent.com/kitazaki/katacoda-scenarios/master/prometheus/alertmanager.yml
-#nohup ./alertmanager &
-#cd ../
+cd alertmanager-0.21.0.linux-amd64/
+mv alertmanager.yml alertmanager.yml.org
+wget https://raw.githubusercontent.com/kitazaki/katacoda-scenarios/master/prometheus/alertmanager.yml
+nohup ./alertmanager --config.file=alertmanager.yml &
+cd ../
 
 cd prometheus-2.19.0.linux-amd64/
 mv prometheus.yml prometheus.yml.org
 wget https://raw.githubusercontent.com/kitazaki/katacoda-scenarios/master/prometheus/prometheus.yml
 wget https://raw.githubusercontent.com/kitazaki/katacoda-scenarios/master/prometheus/alert_rules.yml
-nohup ./prometheus &
+nohup ./prometheus --config.file=prometheus.yml &
 cd ../
