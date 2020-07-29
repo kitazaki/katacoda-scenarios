@@ -9,4 +9,4 @@ route:
 receivers:
 - name: 'slack'
   slack_configs:
-  - api_url: 'https://hooks.slack.com/services/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'
+  - api_url: ''
