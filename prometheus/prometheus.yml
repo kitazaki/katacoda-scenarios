@@ -1,13 +1,12 @@
 global:
   scrape_interval:     15s
   evaluation_interval: 15s
-  rule_files:
-    - ./alert_rules.yml
 alerting:
   alertmanagers:
   - static_configs:
     - targets:
 rule_files:
+  - ./alert_rules.yml
 scrape_configs:
   - job_name: 'prometheus'
     static_configs:
@@ -15,6 +14,9 @@ scrape_configs:
   - job_name: 'node-exporter'
     static_configs:
     - targets: ['localhost:9100']
+  - job_name: 'non_exist_host'
+    static_configs:
+    - targets: ['localhost:9999']
   - job_name: 'google_endpoint'
     metrics_path: /probe
     params:

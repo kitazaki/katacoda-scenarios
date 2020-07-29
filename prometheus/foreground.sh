@@ -30,5 +30,6 @@ cd ../
 cd prometheus-2.19.0.linux-amd64/
 mv prometheus.yml prometheus.yml.org
 wget https://raw.githubusercontent.com/kitazaki/katacoda-scenarios/master/prometheus/prometheus.yml
+wget https://raw.githubusercontent.com/kitazaki/katacoda-scenarios/master/prometheus/alert_rules.yml
 nohup ./prometheus &
 cd ../
