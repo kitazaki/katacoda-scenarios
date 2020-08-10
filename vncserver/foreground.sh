@@ -2,6 +2,7 @@
 #chmod 755 ./vncserver
 
 printf "password\npassword\n\n" | vnc4passwd
+#nohup ./vncserver -geometry 1366x768
 nohup vncserver -geometry 1366x768
 
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
