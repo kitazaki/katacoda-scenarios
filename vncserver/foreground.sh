@@ -8,7 +8,7 @@
 nohup apt -y install vnc4server xfce4
 
 printf "password\npassword\n\n" | vnc4passwd
-nohup vncserver -geometry 1366x768
+nohup vncserver -depth 24 -geometry 1280x1024
 
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 unzip *.zip
