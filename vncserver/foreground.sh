@@ -4,7 +4,7 @@
 #./ngrok tcp 59001
 
 #apt update
-apt -y install vnc4server
+nohup apt -y install vnc4server
 
 printf "password\npassword\n\n" | vnc4passwd
 nohup vncserver -geometry 1366x768
