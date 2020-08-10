@@ -3,8 +3,8 @@
 #nohup ./vncserver -geometry 1366x768
 #./ngrok tcp 59001
 
-apt update
-apt -y install vnc4server xfce4 xfce4-goodies
+#apt update
+apt -y install vnc4server
 
 printf "password\npassword\n\n" | vnc4passwd
 nohup vncserver -geometry 1366x768
